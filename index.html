@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Break Balance</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Break Balance</h1>
+    <p>Tu asistente de pausas activas en el trabajo</p>
+
+    <div class="section">
+      <h2>Temporizador Pomodoro</h2>
+      <input id="work-time" type="number" min="1" value="25"> min trabajo
+      <input id="break-time" type="number" min="1" value="5"> min descanso
+      <br><br>
+      <button onclick="startTimer()">Iniciar</button>
+      <button onclick="resetTimer()">Reiniciar</button>
+      <h3 id="timer-label">⏱️</h3>
+    </div>
+
+    <div class="section">
+      <h2>Pausas Activas (Videos)</h2>
+      <iframe width="300" height="170" src="https://www.youtube.com/embed/Lx4YFmORsWc" frameborder="0" allowfullscreen></iframe>
+    </div>
+
+    <div class="section">
+      <h2>Respiración Guiada</h2>
+      <button onclick="playBreath()">Iniciar Respiración</button>
+      <div class="circle" id="circle"></div>
+    </div>
+
+    <audio id="start-sound" src="https://www.soundjay.com/buttons/sounds/button-16.mp3" preload="auto"></audio>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
